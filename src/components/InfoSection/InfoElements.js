@@ -4,6 +4,7 @@ export const InfoContainer = styled.div`
     background: ${({ lightBg })=>( lightBg ? '#22222' : '#22222' )};
     margin-left:auto;
     margin-right:auto;
+    margin-top:45px;
     max-width: 1400px; /* 2 */
 
     @media screen and (max-width: 768px){
@@ -116,7 +117,7 @@ export const ChartP = styled.p`
     margin-bottom: 16px;
 `;
 export const ChartLogo = styled.img`
-    width: 48px;
+    width: px;
     margin: 0 0 10px 0;
     grid-auto-columns: minmax(auto, 1fr);
     @media screen and (max-width:768px){

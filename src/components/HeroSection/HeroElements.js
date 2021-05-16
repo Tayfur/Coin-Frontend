@@ -13,11 +13,10 @@ export const HeroContainer = styled.div`
     margin-right: auto; /* 1 */
     margin-left:  auto; /* 1 */
     max-width: 1400px; /* 2 */
-
     flex-direction: column;
     @media screen and (max-width: 768px){
         padding:0;
-        height: 700px;
+        height: 800px;
 
     }
     :before{
@@ -44,8 +43,9 @@ export const HeroContainer = styled.div`
 export const HeroBg = styled.div`
     position: relative;
     overflow: hidden;  
-    @media screen and (max-width: 768px){
     
+    @media screen and (max-width: 768px){
+
 }
 `;
 
@@ -53,9 +53,11 @@ export const HeroPicture = styled.img`
     width: 100%;
     -o-object-fit: contain;
     object-fit:contain ;
+    margin: 1px 0 10px 0;
+
     @media screen and (max-width: 768px){
-        margin: 0 0 100px 0;
-    
+        margin: 0 0 10px 0;
+ 
 }
 `;
 
@@ -67,6 +69,10 @@ export const HeroContent = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+    @media screen and (max-width: 768px){
+    margin-top:50px;
+ 
+}
 `;
 
 export const HeroH1 = styled.h1`
@@ -75,11 +81,11 @@ export const HeroH1 = styled.h1`
     text-align: center;
 
     @media screen and (max-width: 768px){
-        font-size: 24px;
+        font-size: 32px;
     }
 
     @media screen and (max-width: 480px){
-        font-size: 24px;
+        font-size: 28px;
     }
 `;
 
@@ -95,7 +101,7 @@ export const HeroP = styled.p`
     }
 
     @media screen and (max-width: 480px){
-        font-size: 14px;
+        font-size: 18px;
     }
 `;
 

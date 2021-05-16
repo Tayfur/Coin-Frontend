@@ -1,8 +1,8 @@
 import React from 'react'
 
-import Icon1 from '../../images/image1.svg'
-import Icon2 from '../../images/image1.svg'
-import Icon3 from '../../images/image1.svg'
+import service1 from '../../images/merge.png'
+import service2 from '../../images/service2.png'
+import service3 from '../../images/service3.png'
 
 import {
     ServicesContainer, 
@@ -20,19 +20,19 @@ const Services = () => {
             <ServicesH1>Our services</ServicesH1>
             <ServicesWrapper>
                 <ServicesCard>
-                    <ServicesIcon src={Icon1} />
-                    <ServicesH2>Reduces Expences</ServicesH2>
-                    <ServicesP>We help reduce your fess and increase your overal revenue.</ServicesP>
+                    <ServicesIcon src={service1} />
+                    <ServicesH2>Upgrade your nowledge</ServicesH2>
+                    <ServicesP>AminaCoin is a program of interconnected upgrades designed to make ethereum more scalable, secure,and sustainable</ServicesP>
                 </ServicesCard>
                 <ServicesCard>
-                    <ServicesIcon src={Icon2} />
-                    <ServicesH2>Virtual Offices</ServicesH2>
-                    <ServicesP>You can access our platform online anywhere in the world.</ServicesP>
+                    <ServicesIcon src={service2}  />
+                    <ServicesH2>AminaCoin for enterprise</ServicesH2>
+                    <ServicesP>See how AminaCoin can open up new business models, reduce your costs and future-proof your business.</ServicesP>
                 </ServicesCard>
                 <ServicesCard>
-                    <ServicesIcon src={Icon3} />
-                    <ServicesH2>Premium Benefits</ServicesH2>
-                    <ServicesP>Unlock our special membership card that returns 5% cash back.</ServicesP>
+                    <ServicesIcon src={service3} />
+                    <ServicesH2>The AminaCoin community</ServicesH2>
+                    <ServicesP>AminaCoin is all about community. It's made up of people from all different backgrounds and interests .See how you can join in.</ServicesP>
                 </ServicesCard>
             </ServicesWrapper>
         </ServicesContainer>

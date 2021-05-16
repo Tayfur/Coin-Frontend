@@ -1,5 +1,4 @@
 import React from 'react'
-import logo from '../../images/logo512.png'
 import { 
     Container, 
     Form, 
@@ -22,7 +21,7 @@ const SignIn = () => {
                 <Icon to="/">Website</Icon>
                 <FormContent>
                     <Form action="#">
-                        <Logo src={logo} />
+                        <Logo  />
                         <FormH1>Sign in to your account</FormH1>
                         <FormLabel htmlFor='for'>Email</FormLabel>
                         <FormInput type='email' required />

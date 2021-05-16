@@ -34,7 +34,7 @@ export const ServicesWrapper = styled.div`
         grid-template-columns: 1fr 1fr;
     }
 
-    @media screen and (max-width: 768px){
+    @media screen and (max-width: 1000px){
         grid-template-columns: 1fr;
         padding: 0 20px;
     }

@@ -1,4 +1,6 @@
+import { Link } from 'react-scroll';
 import styled from 'styled-components'
+import { Link as LinkR } from 'react-router-dom'
 
 export const ServicesContainer = styled.div`
     height: 800px;
@@ -43,7 +45,7 @@ export const ServicesWrapper = styled.div`
     }
 `;
 
-export const ServicesCard = styled.div`
+export const ServicesCard = styled(LinkR)`
     background: #222222;
     display: flex;
     flex-direction: column;

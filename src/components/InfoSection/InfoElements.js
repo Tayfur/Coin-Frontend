@@ -9,6 +9,7 @@ export const InfoContainer = styled.div`
 
     @media screen and (max-width: 768px){
         padding: 100px 0;
+        
     }
 `;
 
@@ -126,10 +127,10 @@ export const ChartLogo = styled.img`
 `;
 export const ChartRow = styled.div`
     display: grid;
-    grid-auto-columns: minmax(auto, 0.1fr);
+    grid-row :minmax(auto, 0.1fr);
     grid-template-areas: ${({ imgStart })=> ( imgStart ? `'Logo chart1 chart2 chart3 chart4 chart5 chart6 btn'` : `' Logo chart1 chart2 chart3 chart4 chart5 chart6 btn'` )};
     @media screen and (max-width: 768px){
-        grid-template-areas: ${({ imgStart }) => (imgStart ? `'col1' 'col2'` : `'col1 col1' 'col2 col2'`)};
+        grid-template-areas: ${({ imgStart }) => (imgStart ? `'logo' 'chart1'` : `'logo' 'chart1'`)};
     }
 `;
 export const ChartColumn1 = styled.div`

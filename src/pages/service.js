@@ -1,15 +1,12 @@
 import React, {useState} from 'react'
-import { homeObjOne } from '../components/InfoSection/Data';
 import {
     Sidebar,
     Navbar,
-    HeroSection,
-    InfoSection,
-    Services,
-    Footer
+    Footer,
+    ServiceData,
 } from '../components'
-
-function Home() {
+import {DataS}  from '../components/ServiceData/Data'
+function Service() {
     const [isOpen, setIsOpen] = useState(false);
 
     const toggle = () => {
@@ -20,12 +17,10 @@ function Home() {
         <>
             <Sidebar isOpen={isOpen} toggle={toggle} />
             <Navbar toggle={toggle} />
-            <HeroSection />
-            <InfoSection {...homeObjOne} />
-            <Services />
+            <ServiceData {...DataS}/>
             <Footer/>
         </>
     )
 }
 
-export default Home
+export default Service;

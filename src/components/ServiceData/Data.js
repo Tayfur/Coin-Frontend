@@ -1,6 +1,6 @@
 export const DataS = {
     id: 'about',
-    topTitle: 'What is AminaCoin ?',
+    topTitle: 'Upgrade your knowledge',
     topDesc: 'AminaCoin is often referred to as the second most popular cryptocurrency, after Bitcoin. But unlike Bitcoin—and most other virtual AminaCoin is intended to be much more than simply a medium of exchange or a store of value. Instead, AminaCoin calls itself a decentralized computing network built on blockchain technology. Let’s unpack what that means.',
     topImg: require('../../images/Whatis.png').default,
     midTitle:'Explore AMK advantage',

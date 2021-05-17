@@ -21,7 +21,7 @@ const Services = () => {
             <ServicesWrapper>
                 <ServicesCard to='/services'>
                     <ServicesIcon src={service1} />
-                    <ServicesH2>Upgrade your nowledge</ServicesH2>
+                    <ServicesH2>Upgrade your knowledge</ServicesH2>
                     <ServicesP>AminaCoin is a program of interconnected upgrades designed to make ethereum more scalable, secure,and sustainable</ServicesP>
                 </ServicesCard>
                 <ServicesCard to='/services'>

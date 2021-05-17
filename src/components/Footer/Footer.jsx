@@ -7,6 +7,7 @@ import {
     FaTwitter, 
     FaLinkedin 
 } from 'react-icons/fa'
+import logo from '../../images/logo.png'
 import { 
     FooterContainer, 
     FooterWrap,
@@ -72,8 +73,8 @@ function Footer() {
                    </FooterLinksContainer>
                    <SocialMedia>
                        <SocialMediaWrap>
-                            <SocialLogo to="/" onClick={toggleHome}>
-                                Logo
+                            <SocialLogo to="/" src={logo} onClick={toggleHome}>
+                            
                             </SocialLogo>
                             <WebsiteRights>Website {new Date().getFullYear()} All rights reserved.</WebsiteRights>
                             <SocialIcons>

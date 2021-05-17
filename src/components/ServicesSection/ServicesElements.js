@@ -8,16 +8,19 @@ export const ServicesContainer = styled.div`
     align-items: center;
     background: #222222;
     margin-right: auto; /* 1 */
-  margin-left:  auto; /* 1 */
+    margin-left:  auto; /* 1 */
 
   max-width: 1300px; /* 2 */
 
     @media screen and (max-width: 768px){
-        height: 1100px;
+        height: 1300px;
+        padding-top:400px;
     }
 
     @media screen and (max-width: 480px){
         height: 1300px;
+        height: 1300px;
+        padding-top:300px;
     }
 `;
 

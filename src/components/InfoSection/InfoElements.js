@@ -16,7 +16,7 @@ export const InfoContainer = styled.div`
 export const InfoWrapper = styled.div`
     display: grid;
     z-index: 1;
-    height: 860px;
+    height: 800px;
     margin-right: auto;
     margin-left: auto;
     padding: 0 24px;
@@ -32,6 +32,7 @@ export const InfoRow = styled.div`
 
     @media screen and (max-width: 768px){
         grid-template-areas: ${({ imgStart }) => (imgStart ? `'col1' 'col2'` : `'col1 col1' 'col2 col2'`)};
+        
     }
 `;
 
@@ -98,7 +99,7 @@ export const Img = styled.img`
     margin: 0 0 10px 0;
     padding-right: 0;
     @media screen and (max-width:768px){
-        margin: 0 0 200px 0;
+        margin: 0 0 100px 0;
     }
 `;
 
@@ -118,7 +119,7 @@ export const ChartP = styled.p`
     margin-bottom: 16px;
 `;
 export const ChartLogo = styled.img`
-    width: px;
+    width: 32px;
     margin: 0 0 10px 0;
     grid-auto-columns: minmax(auto, 1fr);
     @media screen and (max-width:768px){
@@ -128,46 +129,90 @@ export const ChartLogo = styled.img`
 export const ChartRow = styled.div`
     display: grid;
     grid-row :minmax(auto, 0.1fr);
-    grid-template-areas: ${({ imgStart })=> ( imgStart ? `'Logo chart1 chart2 chart3 chart4 chart5 chart6 btn'` : `' Logo chart1 chart2 chart3 chart4 chart5 chart6 btn'` )};
+
+    grid-template-areas: 'Logo chart1 chart2 chart3 chart4 chart5 chart6 btn ';
+    
     @media screen and (max-width: 768px){
-        grid-template-areas: ${({ imgStart }) => (imgStart ? `'logo' 'chart1'` : `'logo' 'chart1'`)};
+        grid-template-areas: 
+                             'chart1 chart2'
+                              'chart3 chart4' 
+                              'chart5 chart6'
+                              'btn btn';
+        justify-content:center;
+        align-items:center;
+
     }
 `;
 export const ChartColumn1 = styled.div`
     margin-left:40px;
     grid-area: chart1;
+    @media screen and (max-width: 768px){
+        margin-left:20px;
+
+    }
     
 `;
 
 export const ChartColumn2 = styled.div`
     margin-left:20px;
     grid-area: chart2;
+    @media screen and (max-width: 768px){
+        margin-left:20px;
+    }
 `;
 export const ChartColumn3 = styled.div`
     margin-left:40px;
     grid-area: chart3;
+    @media screen and (max-width: 768px){
+        margin-left:20px;
+        margin-top:20px;
+    }
 `;
 export const ChartColumn4 = styled.div`
     margin-left:40px;
     grid-area: chart4;
+    @media screen and (max-width: 768px){
+        margin-left:20px;
+        margin-top:20px;
+    }
 
 `;
 export const ChartColumn5 = styled.div`
     margin-left:40px;
     grid-area: chart5;
+    @media screen and (max-width: 768px){
+        margin-left:20px;
+        margin-top:20px;
+    }
 
 `;
 export const ChartColumn6 = styled.div`
     margin-left:40px;
     grid-area: chart6;
+    @media screen and (max-width: 768px){
+        margin-left:20px;
+        margin-top:20px;
+
+    }
 
 `;
 export const ChartColumnLogo = styled.div`
     grid-area: Logo;
+    @media screen and (max-width: 768px){
+        display:none;
+
+
+    }
 `;
 export const ChartColumnBtn = styled.div`
     margin-left:40px;
     grid-area: btn;
+    @media screen and (max-width: 768px){
+        margin-left:auto;
+        margin-right:auto;
+        margin-top:40px;
+
+    }
 `;
 
 export const Row = styled.div`

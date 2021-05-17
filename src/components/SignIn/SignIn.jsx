@@ -12,16 +12,15 @@ import {
     Text,
     Logo
 } from './SigninElements'
-
+import logo from "../../images/logo.png"
 const SignIn = () => {
     return (
         <>
         <Container>
             <FormWrap>
-                <Icon to="/">Website</Icon>
                 <FormContent>
                     <Form action="#">
-                        <Logo  />
+                        <Logo  src={logo}/>
                         <FormH1>Sign in to your account</FormH1>
                         <FormLabel htmlFor='for'>Email</FormLabel>
                         <FormInput type='email' required />
